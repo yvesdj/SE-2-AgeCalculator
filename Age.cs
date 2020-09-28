@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace AgeCalculator
 {
-    class Welcome
+    class Age
     {
-        private int dag;
-        public int Dag
+        private static int dag;
+        public static int Dag
         {
             get {return dag;}
             set { dag = value; }
         }
 
-        private int maand;
-        public int Maand
+        private static int maand;
+        public static int Maand
         {
             get { return maand; }
             set { maand = value; }
         }
-        private int jaar;
-        public int Jaar
+        private static int jaar;
+        public static int Jaar
         {
             get {return jaar;}
             set { jaar = value; }
