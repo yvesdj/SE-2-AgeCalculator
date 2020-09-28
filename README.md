@@ -1,6 +1,6 @@
 # SE-2-AgeCalculator
-##App om leeftijd te berekenen
-##---------------------------------------
+## App om leeftijd te berekenen
+## ---------------------------------------
 
 ### To Do:
 
