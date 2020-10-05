@@ -8,21 +8,20 @@ namespace AgeCalculator
 {
     class AgeCalculation
     {
-        public DateTime Input { get; set; }
         private DateTime _currentDateTime;
 
-        public AgeCalculation(DateTime input)
+        public AgeCalculation()
         {
-            Input = input;
-            _currentDateTime = new DateTime();
+            _currentDateTime = DateTime.Today;
         }
 
-        public TimeSpan CalculateAge()
+        public int CalculateAge(DateTime input)
         {
-            _currentDateTime = DateTime.Now;
-            TimeSpan output = _currentDateTime - Input;
-            Console.WriteLine("{0} - {1} = {2}", _currentDateTime, Input, output.ToString());
-            return output;
+            int age = _currentDateTime.Year - input.Year;
+            Console.WriteLine("Now: " + _currentDateTime.Year);
+            Console.WriteLine("Input: " + input.Year);
+            Console.WriteLine("Age: " + age);
+            return age;
         }
 
 
