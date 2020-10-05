@@ -8,27 +8,35 @@ namespace AgeCalculator
 {
     class Age
     {
-        private static int dag;
-        public static int Dag
+
+        private  int dag;
+        public  int Dag
         {
             get {return dag;}
             set { dag = value; }
         }
 
-        private static int maand;
-        public static int Maand
+        private  int maand;
+        public int Maand
         {
             get { return maand; }
             set { maand = value; }
         }
-        private static int jaar;
-        public static int Jaar
+        private  int jaar;
+        public int Jaar
         {
             get {return jaar;}
             set { jaar = value; }
         }
 
 
+
+        public DateTime gebJaar;
+        public void omzetten(int Dag, int Maand, int Jaar)
+        {
+            gebJaar = new DateTime(jaar, maand, dag);
+            Console.WriteLine(gebJaar);
+        }
 
 
     }
