@@ -10,6 +10,10 @@ namespace AgeCalculator
     {
         static void Main(string[] args)
         {
+            AgeCalculation ageCalculation = new AgeCalculation();
+            ageCalculation.CalculateAge(new DateTime(2012, 01, 01));
+
+            Console.ReadLine();
         }
     }
 }
