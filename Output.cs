@@ -43,6 +43,8 @@ namespace AgeCalculator
                     StateManager.Instance.Exit();
                     break;
                 default:
+                    Console.WriteLine("\nInput not recognized, type 'yes' or 'no'.");
+                    CloseOrRestart();
                     break;
             }
         }
