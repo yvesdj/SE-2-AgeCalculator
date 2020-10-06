@@ -10,10 +10,10 @@ namespace AgeCalculator
     {
         static void Main(string[] args)
         {
+            Age leeftijd = new Age();
             leeftijd.InputCall();
             Console.WriteLine("De geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".");
             Console.ReadLine();
-            Age leeftijd = new Age();
         }
         
 
