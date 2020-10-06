@@ -32,7 +32,7 @@ namespace AgeCalculator
 
 
         public DateTime gebJaar;
-        public DateTime Omzetten(int Dag, int Maand, int Jaar)
+        public DateTime Omzetten()
         {
             gebJaar = new DateTime(jaar, maand, dag);
             Console.WriteLine(gebJaar);
@@ -56,7 +56,7 @@ namespace AgeCalculator
             int jaarInt = Convert.ToInt32(Console.ReadLine());
             Jaar = jaarInt;
 
-            Omzetten(dagInt, maandInt, jaarInt);
+            Omzetten();
            
             
         }
