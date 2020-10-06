@@ -39,5 +39,21 @@ namespace AgeCalculator
         }
 
 
+        public InputCall()
+        {
+            Console.WriteLine("Geef dag");
+            int dagInt = Convert.ToInt32(Console.ReadLine());
+            Dag = dagInt;
+
+            Console.WriteLine("Geef maand");
+            int maandInt = Convert.ToInt32(Console.ReadLine());
+            Maand = maandInt;
+
+            Console.WriteLine("Geef jaar");
+            int jaarInt = Convert.ToInt32(Console.ReadLine());
+            Jaar = jaarInt;
+            
+        }
+
     }
 }
