@@ -22,6 +22,11 @@ namespace AgeCalculator
             deathCalculator = deathCal;
         }
 
+        public void CloseOrRestart()
+        {
+
+        }
+
         public void PrintOutput()
         {
             Console.WriteLine("Now: " + ageCalculator.currentDateTime.Year);
