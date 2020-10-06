@@ -56,7 +56,7 @@ namespace AgeCalculator
             int jaarInt = Convert.ToInt32(Console.ReadLine());
             Jaar = jaarInt;
 
-            Omzetten(dagInt, maandInt, jaarInt);
+            //Omzetten(dagInt, maandInt, jaarInt);
            
             
         }
