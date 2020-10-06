@@ -19,7 +19,10 @@ namespace AgeCalculator
             AgeCalculation calculator = new AgeCalculation();
             calculator.CalculateAge(leeftijd.Omzetten());
 
-            Output output = new Output(calculator);
+            DeathCalculator deathCalculator = new DeathCalculator();
+
+            //Output output = new Output(calculator);
+            Output output = new Output(calculator, deathCalculator);
             output.PrintOutput();
 
             Console.ReadLine();
