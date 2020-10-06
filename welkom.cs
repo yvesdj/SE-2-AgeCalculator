@@ -37,15 +37,19 @@ namespace AgeCalculator
 
         public void VerderGaan()
         {
-            Console.WriteLine("Als u wenst verder te gaan, typ dan 'Ja', indien u wilt stoppen en afsluiten, type dan 'nee', Geen hoofdletters.");
+            Console.WriteLine("");
+            Console.WriteLine("Als u wenst verder te gaan, typ dan 'ja', indien u wilt stoppen en afsluiten, type dan 'nee', Geen hoofdletters.");
             string antwoord = Console.ReadLine();
 
             if(antwoord == "ja")
             {
-                Console.WriteLine("oke");
+                Console.WriteLine("");
+                Console.WriteLine("U koos om verder te gaan met onze calculator! Beantwoord nu de volgende vragen.");
+                Console.WriteLine("");
             }
-            else
+            else if (antwoord == "nee")
             {
+                Console.WriteLine("");
                 Console.WriteLine("Programma word afgesloten binnen 3 sec.");
                 Console.Write("3...");
                 Thread.Sleep(1000);
@@ -54,6 +58,12 @@ namespace AgeCalculator
                 Console.Write("1...");
                 Thread.Sleep(1000);
                 System.Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Dat was geen juist antwoord, vul alstublieft 'ja' of 'nee' in.");
+                VerderGaan();
             }
 
         }
