@@ -42,17 +42,17 @@ namespace AgeCalculator
 
         public void InputCall()
         {
-            Console.WriteLine("Geef dag");
+            Console.WriteLine("Geef uw geboortedag aub..");
             int dagInt = Convert.ToInt32(Console.ReadLine());
             Dag = dagInt;
            
 
-            Console.WriteLine("Geef maand");
+            Console.WriteLine("Geef uw geboortemaand aub..");
             int maandInt = Convert.ToInt32(Console.ReadLine());
             Maand = maandInt;
             
 
-            Console.WriteLine("Geef jaar");
+            Console.WriteLine("Geef uw geboortejaar aub..");
             int jaarInt = Convert.ToInt32(Console.ReadLine());
             Jaar = jaarInt;
 

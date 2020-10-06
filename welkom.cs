@@ -49,15 +49,7 @@ namespace AgeCalculator
             }
             else if (antwoord == "nee")
             {
-                Console.WriteLine("");
-                Console.WriteLine("Programma word afgesloten binnen 3 sec.");
-                Console.Write("3...");
-                Thread.Sleep(1000);
-                Console.Write("2...");
-                Thread.Sleep(1000);
-                Console.Write("1...");
-                Thread.Sleep(1000);
-                System.Environment.Exit(0);
+                Afsluiten();
             }
             else
             {
@@ -66,6 +58,19 @@ namespace AgeCalculator
                 VerderGaan();
             }
 
+        }
+
+        public void Afsluiten()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("Programma word afgesloten binnen 3 sec.");
+            Console.Write("3...");
+            Thread.Sleep(1000);
+            Console.Write("2...");
+            Thread.Sleep(1000);
+            Console.Write("1...");
+            Thread.Sleep(1000);
+            System.Environment.Exit(0);
         }
 
 
