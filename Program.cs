@@ -12,7 +12,11 @@ namespace AgeCalculator
         {
             Age leeftijd = new Age();
             leeftijd.InputCall();
-            Console.WriteLine("De geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".");
+            Console.WriteLine("\nDe geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".\n");
+
+            AgeCalculation calculator = new AgeCalculation();
+            calculator.CalculateAge(leeftijd.Omzetten());
+
             Console.ReadLine();
         }
         
