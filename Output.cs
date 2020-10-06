@@ -28,7 +28,7 @@ namespace AgeCalculator
             Console.WriteLine("Input: " + ageCalculator.input.Year);
             Console.WriteLine("Age: " + ageCalculator.age);
 
-            Console.WriteLine("You will die on the following date: " + deathCalculator.RandomDate.ToString("dddd, dd MMMM yyyy"));
+            Console.WriteLine("\nYou will die on the following date: " + deathCalculator.RandomDate.ToString("dddd, dd MMMM yyyy"));
         }
     }
 }
