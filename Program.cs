@@ -10,22 +10,7 @@ namespace AgeCalculator
     {
         static void Main(string[] args)
         {
-            Welkom startscherm = new Welkom();
-            startscherm.WelkomScherm();
-            Age leeftijd = new Age();
-            leeftijd.InputCall();
-            Console.WriteLine("\nDe geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".\n");
-
-            AgeCalculation calculator = new AgeCalculation();
-            calculator.CalculateAge(leeftijd.Omzetten());
-
-            DeathCalculator deathCalculator = new DeathCalculator();
-
-            //Output output = new Output(calculator);
-            Output output = new Output(calculator, deathCalculator);
-            output.PrintOutput();
-
-            Console.ReadLine();
+            StateManager.Instance.Run();
         }
         
 
