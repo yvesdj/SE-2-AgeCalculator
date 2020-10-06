@@ -25,7 +25,7 @@ namespace AgeCalculator
             leeftijd.Jaar = jaarInt;
 
             Console.WriteLine("De geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".");
-            leeftijd.omzetten(dagInt, maandInt, jaarInt);
+            leeftijd.Omzetten(dagInt, maandInt, jaarInt);
             Console.ReadLine();
         }
         
