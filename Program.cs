@@ -12,20 +12,10 @@ namespace AgeCalculator
         {
             
             Age leeftijd = new Age();
-            Console.WriteLine("Geef dag");
-            int dagInt = Convert.ToInt32(Console.ReadLine());
-            leeftijd.Dag = dagInt;
-
-            Console.WriteLine("Geef maand");
-            int maandInt = Convert.ToInt32(Console.ReadLine());
-            leeftijd.Maand = maandInt;
-
-            Console.WriteLine("Geef jaar");
-            int jaarInt = Convert.ToInt32(Console.ReadLine());
-            leeftijd.Jaar = jaarInt;
+            leeftijd.InputCall();
 
             Console.WriteLine("De geboorte datum is " + leeftijd.Dag + "/" + leeftijd.Maand + "/" + leeftijd.Jaar + ".");
-            leeftijd.Omzetten(dagInt, maandInt, jaarInt);
+           
             Console.ReadLine();
         }
         

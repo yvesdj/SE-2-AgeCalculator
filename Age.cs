@@ -32,26 +32,32 @@ namespace AgeCalculator
 
 
         public DateTime gebJaar;
-        public void Omzetten(int Dag, int Maand, int Jaar)
+        public DateTime Omzetten(int Dag, int Maand, int Jaar)
         {
             gebJaar = new DateTime(jaar, maand, dag);
             Console.WriteLine(gebJaar);
+            return gebJaar;
         }
 
 
-        public InputCall()
+        public void InputCall()
         {
             Console.WriteLine("Geef dag");
             int dagInt = Convert.ToInt32(Console.ReadLine());
             Dag = dagInt;
+           
 
             Console.WriteLine("Geef maand");
             int maandInt = Convert.ToInt32(Console.ReadLine());
             Maand = maandInt;
+            
 
             Console.WriteLine("Geef jaar");
             int jaarInt = Convert.ToInt32(Console.ReadLine());
             Jaar = jaarInt;
+
+            Omzetten(dagInt, maandInt, jaarInt);
+           
             
         }
 
