@@ -6,21 +6,24 @@ using System.Threading.Tasks;
 
 namespace AgeCalculator
 {
-    class AgeCalculation
+    public class AgeCalculation
     {
-        private DateTime _currentDateTime;
+        public DateTime currentDateTime;
+        public DateTime input;
+
+        public int age;
 
         public AgeCalculation()
         {
-            _currentDateTime = DateTime.Today;
+            currentDateTime = DateTime.Today;
         }
 
         public int CalculateAge(DateTime input)
         {
-            int age = _currentDateTime.Year - input.Year;
-            Console.WriteLine("Now: " + _currentDateTime.Year);
-            Console.WriteLine("Input: " + input.Year);
-            Console.WriteLine("Age: " + age);
+            this.input = input;
+            age = currentDateTime.Year - input.Year;
+
+
             return age;
         }
 
